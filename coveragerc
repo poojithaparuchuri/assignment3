@@ -1,0 +1,19 @@
+[run]
+source = /Users/sreepoojithaparuchuri/PycharmProjects/assignment3
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if __name__ == .__main__.:
+
+# Define the specific files or directories to include/exclude in your coverage report
+omit =
+    # Exclude test files from coverage reports
+    *test_secondary_structure_splitter.py
+    *test_nt_fasta_stats.py
+
+[html]
+directory = coverage_html_report
+
+[xml]
+output = coverage.xml
